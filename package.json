@@ -1,0 +1,15 @@
+{
+  "name": "creator-event-queue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/creator_events.ts",
+    "register": "tsx src/register_webhook.ts",
+    "worker": "tsx src/queue_worker.ts",
+    "test": "tsx --test test/creator_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {"zod": "^3.24.2"},
+  "devDependencies": {"@types/node": "^22.15.0", "tsx": "^4.19.2", "typescript": "^5.8.3"}
+}
